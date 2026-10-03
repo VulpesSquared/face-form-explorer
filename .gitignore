@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.DS_Store
+.streamlit/secrets.toml
+output/
+uploads/
+*.xlsx
+*.csv
+models/*.download
+models/*.task
+.pytest_cache/
+tests/data/*
+!tests/data/README.md
+*.log
+core
