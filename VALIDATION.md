@@ -20,6 +20,9 @@ NumPy 2.5.3, scikit-learn 1.9.1. Full installed versions are in
   closed successfully on macOS. This is the platform-specific fallback.
 - The Linux workflow tests **1.0.1** separately; its GitHub Actions result is the
   evidence for that platform, not the macOS fallback test.
+- A clean Linux runner exposed a missing `libEGL.so.1` dependency. Native EGL,
+  GLES, GL and GLib packages are now included in CI and `packages.txt` for
+  Streamlit Community Cloud; CPU mode still requires these shared libraries.
 
 ## Real sample images
 

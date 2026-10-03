@@ -96,6 +96,16 @@ Open http://localhost:8501. On Windows, activate with `.venv/Scripts/activate`.
 The model location is anchored to `app.py`, so starting from another working
 directory does not create a second model cache.
 
+On Debian/Ubuntu, install the native graphics libraries before running MediaPipe,
+even with the CPU delegate:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y libegl1 libgles2 libgl1 libglib2.0-0
+```
+
+`packages.txt` supplies these dependencies to Streamlit Community Cloud as well.
+
 ### MediaPipe compatibility
 
 `requirements.txt` selects **MediaPipe 0.10.35 on macOS** and **1.0.1 elsewhere**.
